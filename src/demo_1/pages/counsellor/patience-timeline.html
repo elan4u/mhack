@@ -199,7 +199,7 @@
 <!-- Timeline Block -->
 <section class="timeline">
     <ol>
-      <li>
+      <li class="btn-icons btn-rounded">
         <div>
           <time>Week 1</time> At vero eos et accusamus et iusto odio dignissimos 
         </div>
@@ -232,8 +232,17 @@
   
       <li></li>
     </ol>
+    
   </section>
                   </div>
+
+                  <div class="col-md-12 grid-margin">
+                      <div class="page-header-toolbar">
+                          <div class="dropdown ml-lg-auto ml-3 toolbar-item">
+                              <button type="button" class="btn btn-primary">Review Program</button>
+                        </div>
+                      </div>
+                    </div>
             </div>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
@@ -342,6 +351,10 @@ body {
 
 .timeline ol li:not(:first-child) {
   margin-left: 14px;
+}
+
+.timeline ol li:first-child {
+  width: 20px;
 }
 
 .timeline ol li:not(:last-child)::after {
