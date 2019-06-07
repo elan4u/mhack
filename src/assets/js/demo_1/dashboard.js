@@ -999,5 +999,15 @@
         counter: true
       });
     }
+	
+$('.card btn').click(function (event) {
+$('#myModal').modal('show')
+});
+
+        $('#datepicker').datepicker({
+            uiLibrary: 'bootstrap'
+        });
+	
+	
   });
 })(jQuery);
