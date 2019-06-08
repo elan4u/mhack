@@ -453,7 +453,18 @@
     <!-- Custom js for this page-->
     <script src="assets/js/demo_1/dashboard.js"></script>
     <script src="assets/js/shared/chart.js"></script>
-
+    <script src="assets/js/common.js"></script>
+    <!-- endinject -->
+    <script>
+      $(document).ready(function(){
+        /*var data = getData("GET","http://192.168.96.121/mAi.rehab/api/counselee/getcounseleelist");
+          console.log(data);*/
+          callAjax("http://192.168.96.121/mAi.rehab/api/counselee/getcounseleelist",function(res){
+            console.log(res);
+          })
+      });
+        
+    </script>
     <!-- End custom js for this page-->
   </body>
 </html>
