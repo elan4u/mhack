@@ -61,7 +61,7 @@ $(function () {
             display: true,
             scaleLabel: {
               display: true,
-              labelString: 'Number of Sales',
+              labelString: 'Program',
               fontSize: 12,
               lineHeight: 2
             },
@@ -103,12 +103,12 @@ $(function () {
     var lineData = {
       labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
       datasets: [{
-        data: [0, 205, 75, 150, 100, 150, 50, 100, 80],
+        data: [0, 50, 81, 90, 105, 150, 180, 180, 200],
         backgroundColor: ChartColor[0],
         borderColor: ChartColor[0],
         borderWidth: 3,
         fill: 'false',
-        label: "Sales"
+        label: "Week"
       }]
     };
     var lineOptions = {
@@ -149,7 +149,7 @@ $(function () {
           display: true,
           scaleLabel: {
             display: true,
-            labelString: 'Number of sales',
+            labelString: 'Program',
             fontSize: 12,
             lineHeight: 2
           },
