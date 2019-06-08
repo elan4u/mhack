@@ -229,74 +229,96 @@
                                                             <div class="card no-border">
                                                                 <div id="chat" class="conv-form-wrapper">
                                                                     <form action="" method="GET" class="hidden">
-                                                                        <select
+                                                                        <input type="text" name="first_question"
+                                                                            data-conv-question="What brings you here? ">
+                                                                        <input type="text" name="second_question"
+                                                                            data-conv-question="Do you feel sad?">
+        
+                                                                        <!--<select
                                                                             data-conv-question="Hello! I'm a bot created from a HTML form. Can I show you some features? (this question comes from a select)"
                                                                             name="first-question">
                                                                             <option value="yes">Yes</option>
                                                                             <option value="sure">Sure!</option>
-                                                                        </select>
-                                                                        <input type="text" name="name"
-                                                                            data-conv-question="Alright! First, tell me your full name, please.|Okay! Please, tell me your name first.">
-                                                                        <input type="text"
-                                                                            data-conv-question="Howdy, {name}:0! It's a pleasure to meet you. (note that this question doesn't expect any answer)"
-                                                                            data-no-answer="true">
-                                                                        <input type="text"
-                                                                            data-conv-question="This plugin supports multi-select too. Let's see an example."
-                                                                            data-no-answer="true">
-                                                                        <select name="multi[]"
-                                                                            data-conv-question="What kind of music do you like?"
-                                                                            multiple>
-                                                                            <option value="Rock">Rock</option>
-                                                                            <option value="Pop">Pop</option>
-                                                                            <option value="Country">Country</option>
-                                                                            <option value="Classic">Classic</option>
-                                                                        </select>
-                                                                        <select name="programmer" data-callback="storeState"
-                                                                            data-conv-question="So, are you a programmer? (this question will fork the conversation based on your answer)">
+                                                                        </select>-->
+                                                                        
+                                                                        <select name="counciling_before1" data-callback="storeState"
+                                                                            data-conv-question="Have you ever seen a counselor before?">
                                                                             <option value="yes">Yes</option>
                                                                             <option value="no">No</option>
                                                                         </select>
-                                                                        <div data-conv-fork="programmer">
+                                                                        <div data-conv-fork="counciling_before2">
                                                                             <div data-conv-case="yes">
                                                                                 <input type="text"
-                                                                                    data-conv-question="A fellow programmer! Cool."
+                                                                                    data-conv-question="What do you expect from the counseling process?"
                                                                                     data-no-answer="true">
                                                                             </div>
                                                                             <div data-conv-case="no">
-                                                                                <select name="thought"
-                                                                                    data-conv-question="Have you ever thought about learning? Programming is fun!">
-                                                                                    <option value="yes">Yes</option>
-                                                                                    <option value="no">No..</option>
-                                                                                </select>
+                                                                                <input type="text"
+                                                                                    data-conv-question="What do you expect from the counseling process?"
+                                                                                    data-no-answer="true">
                                                                             </div>
                                                                         </div>
-                                                                        <input type="text"
-                                                                            data-conv-question="convForm also supports regex patterns. Look:"
-                                                                            data-no-answer="true">
-                                                                        <input data-conv-question="Type in your e-mail"
-                                                                            data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
-                                                                            id="email" type="email" name="email" required
-                                                                            placeholder="What's your e-mail?">
-                                                                        <input
-                                                                            data-conv-question="Now tell me a secret (like a password)"
-                                                                            type="password" data-minlength="6" id="senha"
-                                                                            name="password" required placeholder="password">
-                                                                        <select
-                                                                            data-conv-question="Selects also support callback functions. For example, try one of these:">
-                                                                            <option value="google" data-callback="google">Google
-                                                                            </option>
-                                                                            <option value="bing" data-callback="bing">Bing</option>
+                           
+                                                                        <select name="counciling_before" data-callback="storeState"
+                                                                            data-conv-question="Is there a problem from your viewpoint? ">
+                                                                            <option value="yes">Yes</option>
+                                                                            <option value="no">No</option>
                                                                         </select>
-                                                                        <select name="callbackTest"
-                                                                            data-conv-question="You can do some cool things with callback functions. Want to rollback to the 'programmer' question before?">
-                                                                            <option value="yes" data-callback="rollback">Yes</option>
-                                                                            <option value="no" data-callback="restore">No</option>
+                                                                        <div data-conv-fork="counciling_before">
+                                                                            <div data-conv-case="yes">
+                                                                                <input type="text"
+                                                                                    data-conv-question="What makes the problem better?"
+                                                                                    data-no-answer="true">
+                                                                            </div>
+                                                                            <div data-conv-case="no">
+                                                                                    <input type="text" name="first_question"
+                                                                                    data-conv-question="How does this problem typically make you feel?">
+                                                                            </div>
+                                                                        </div>
+                                                                        <input type="text" name="second_question"
+                                                                            data-conv-question="Overall,how would you describe your mood?">
+                                                                        <input type="text" name="second_question"
+                                                                            data-conv-question="What positive changes would you make happen in your life? ... ">
+
+                                                                            
+                                                                        <input type="text" name="second_question"
+                                                                            data-conv-question="What are your goals for this therapy? Or: What are you hoping to get out of therapy">
+                                                                        <input type="text" name="second_question"
+                                                                            data-conv-question="Yes: What, from last session, impacted you this week?">
+                                                                        <input type="text" name="second_question"
+                                                                            data-conv-question="Yes: What, from last session, impacted you this week?">
+                                                                            
+                                                                        <select name="counciling_before1" data-callback="storeState"
+                                                                            data-conv-question="What are your best hopes for our talk today?">
+                                                                            <option value="yes">Yes</option>
+                                                                            <option value="no">No</option>
                                                                         </select>
-                                                                        <select
-                                                                            data-conv-question="This is it! If you like me, consider donating! If you need support, contact me. When the form gets to the end, the plugin submits it normally, like you had filled it."
-                                                                            id="">
-                                                                            <option value="">Awesome!</option>
-                                                                        </select>
+                                                                        <div data-conv-fork="counciling_before2">
+                                                                            <div data-conv-case="yes">
+                                                                                <input type="text"
+                                                                                    data-conv-question="What would you like to be different when you walk out of here today? (change oriented)"
+                                                                                    data-no-answer="true">
+                                                                            </div>
+                                                                            <div data-conv-case="no">
+                                                                                <input type="text"
+                                                                                    data-conv-question="What do you expect from the counseling process?"
+                                                                                    data-no-answer="true">
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                        <input type="text" name="second_question"
+                                                                            data-conv-question="Can you share your worklife details?">    
+                                                                            <input type="text" name="second_question"
+                                                                            data-conv-question="What do you feel is wrong in your life?">    
+                                                                            <input type="text" name="second_question"
+                                                                            data-conv-question="What are your symptoms?ls?">    
+                                                                            <input type="text" name="second_question"
+                                                                            dta-conv-question="How often do you get to meet up with friends?"> 
+                                                                            <input type="text" name="second_question"
+                                                                            dta-conv-question="How are you sleeping these days?">   
+                                                                            
+
+
                                                                     </form>
                                                                 </div>
                                                             </div>
