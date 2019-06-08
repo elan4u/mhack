@@ -207,7 +207,7 @@ $(function () {
     var lineData = {
       labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
       datasets: [{
-        data: [0, 205, 75, 150, 100, 150, 50, 100, 80],
+        data: [0, 70, 75, 150, 150, 170, 190, 230, 260],
         backgroundColor: gradientStrokeFill_1,
         borderColor: ChartColor[0],
         borderWidth: 3,
@@ -228,7 +228,7 @@ $(function () {
           display: true,
           scaleLabel: {
             display: true,
-            labelString: 'Month',
+            labelString: 'Week',
             fontSize: 12,
             lineHeight: 2
           },
@@ -250,7 +250,7 @@ $(function () {
           display: true,
           scaleLabel: {
             display: true,
-            labelString: 'Number of user',
+            labelString: 'Progress',
             fontSize: 12,
             lineHeight: 2
           },

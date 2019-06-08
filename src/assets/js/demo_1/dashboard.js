@@ -45,13 +45,13 @@
       var areaData = {
         labels: ["Jan 1", "Jan 7", "Jan 14", "Jan 21", "Jan 28", "Feb 4", "Feb 11", "Feb 18"],
         datasets: [{
-          label: 'Revenue',
+          label: 'Planned Schedule',
           data: data_1_1,
           borderColor: infoColor,
           backgroundColor: gradientStrokeFill_1,
           borderWidth: 2
         }, {
-          label: 'Sales',
+          label: 'Actual Schedule',
           data: data_1_2,
           borderColor: successColor,
           backgroundColor: gradientStrokeFill_2,
